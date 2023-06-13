@@ -1,0 +1,10 @@
+﻿@page
+@model MyApp.Pages.IndexModel
+
+<h1>Translate Text</h1>
+
+<form method="post" asp-controller="Translation" asp-action="DownloadTranslatedText" enctype="multipart/form-data">
+    <label for="fileInput">File to translate:</label>
+    <input type="file" id="fileInput" name="fileInput">
+    <input type="submit" value="Download Translated Text">
+</form>
